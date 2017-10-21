@@ -13,60 +13,100 @@
  *= require_tree .
  *= require_self
  */
-Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+html{
+    font-family: sans-serif;
+}
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+body{
+ color: #424242;
+ background-color: #ECEFF1;
+ font-family: sans-serif;
+}
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+h1{
+  color: #03A9F4;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+img{
+  width: 150px;
+}
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+ul{
+  list-style: none;
+  font-size: 20px;
+  background-color: #FFF;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #90A4AE;
+}
 
 
+.pomodoro-estimate{
+    font-weight: bold;
+    color: #9acd32;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+}
+
+#add-new-todo-button{
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  outline: none;
+  border-style: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px #90A4AE;
+  display: block;
+  background-color: #03A9F4;
+  margin-top: 10px;
+}
+#add-new-todo-button:active{
+  box-shadow: 1px 1px 1px #90A4AE;
+}
+li{
+    padding: 5px;
+    margin-bottom:10px:
+}
+h2{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 32px;
+    margin: 20px 0px;
+}
+li{
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+li:hover{
+  background-color: #E1F5FE;
+  border-radius: 3px;
+}
+
+a{
+  text-decoration: none;
+  color: #324dcd;
+  vertical-align: middle;
+}
+
+div{
+  width: 60%;
+  margin: 20px auto 0px auto;
+}
+
+input[type="text"], input[type="number"]{
+  font-size: 20px;
+  background-color: #FFF;
+  outline: none;
+  border-style: none;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #90A4AE;
+}
